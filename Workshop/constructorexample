@@ -1,0 +1,31 @@
+public class constructorexample{
+
+		int id;
+		String name;
+		int age;
+
+		public constructorexample(){
+			System.out.println("Default constructor");
+		}
+		public constructorexample(int id, String name,int age){
+			this.id = id;
+			this.name = name;
+			this.age =age;
+		}
+		void display(){
+			System.out.println("id:" +id);
+			System.out.println("name: " +name);
+			System.out.println("age: " +age);
+		}
+
+	public static void main(String[] args){
+		constructorexample cd1 = new constructorexample();
+		constructorexample cd2 = new constructorexample(1," vishnu" , 18);
+		cd2.display();
+	}
+
+
+
+
+
+}
